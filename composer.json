@@ -1,0 +1,43 @@
+{
+  "name": "day4/nova-menu-builder",
+  "description": "Menu Builder Tool for Laravel Nova.",
+  "keywords": [
+    "laravel",
+    "nova",
+    "menu",
+    "builder",
+    "day4"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gerard",
+      "email": "gerard@day4.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "laravel/nova": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Day4\\MenuBuilder\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Day4\\MenuBuilder\\MenuBuilderServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
