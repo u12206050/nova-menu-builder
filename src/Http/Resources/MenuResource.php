@@ -8,13 +8,12 @@ use Day4\MenuBuilder\BuilderResourceTool;
 use Day4\MenuBuilder\Models\Menu;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Resource;
-use Day4\MenuBuilder\MenuBuilder;
 
 class MenuResource extends Resource
 {
     public static string $model = Menu::class;
     public static array $search = ['name', 'slug'];
-    public static bool $displayInNavigation = false;
+    public static $displayInNavigation = false;
 
     public function fields(Request $request)
     {
